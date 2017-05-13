@@ -6,9 +6,9 @@ const Sale = styled.span`
   font-size: 14px;
   color: #ffffff;
   padding: 6px 20px;
-  position: absolute;
   top: 12px;
   right: 14px;
+  position: absolute;
 `;
 
 export default () => {

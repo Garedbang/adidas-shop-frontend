@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import Search from './Search';
-import ProductList from '../ProductList';
+import ProductsList from '../ProductsList';
 import styled from 'styled-components';
 
 const Sidebar = styled.aside`
@@ -18,7 +18,7 @@ export default () => {
     <Sidebar>
       <Logo />
       <Search />
-      <ProductList />
+      <ProductsList />
     </Sidebar>
   );
 };

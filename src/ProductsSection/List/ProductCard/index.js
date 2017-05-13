@@ -1,5 +1,6 @@
 import React from 'react';
-import Sale from '../ProductSale';
+import {Link} from 'react-router-dom';
+import Sale from '../../ProductSale';
 import styled from 'styled-components';
 
 const Div = styled.div`
@@ -13,7 +14,7 @@ const Image = styled.img`
   width: 100%;
   box-sizing: border-box;
 `;
-const Link = styled.a`
+const ProductLink = styled(Link)`
   display: block;
   padding: 24px 0;
   font-size: 30px;
@@ -37,7 +38,7 @@ export default () => {
     <Div>
       <Sale />
       <Image src={require(`./content-img-1.jpg`)} alt="" />
-      <Link active href="product-page.html">$1024</Link>
+      <ProductLink active to="/product">$1024</ProductLink>
     </Div>
   );
 };

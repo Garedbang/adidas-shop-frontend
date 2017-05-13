@@ -1,18 +1,3 @@
-@font-face {
-  font-family: avenir-next-bold;
-  src: url("/fonts/avenir-next-bold.ttf")
-}
-
-@font-face {
-  font-family: andale-mono;
-  src: url("/fonts/Andale-Mono.ttf")
-}
-
-@font-face {
-  font-family: avenir-next-reg;
-  src: url("/fonts/avenir-next-regular.ttf")
-}
-
 html, body {
   width: 100%;
   height: 100%;

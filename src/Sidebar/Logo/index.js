@@ -1,16 +1,18 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
-const Link = styled.a`
+const LinkToHome = styled(Link)`
   height: 52px;
   margin-bottom: 41px;
   display: block;
+  cursor: pointer;
 `;
 
 export default () => {
   return (
-    <Link href="index.html">
+    <LinkToHome to="/">
       <img src={require(`./logo.png`)} alt="logo" />
-    </Link>
+    </LinkToHome>
   );
 };
