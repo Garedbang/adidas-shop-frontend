@@ -1,0 +1,39 @@
+import React from 'react';
+import styled from 'styled-components';
+
+export default () => {
+  const Form = styled.form`
+  position: relative;
+  padding-bottom: 130px;
+  `;
+  const Input = styled.input`
+    width: 100%;
+    border: 0;
+    font-size: 24px;
+    background: transparent;
+    border-bottom: 4px solid rgba(55, 55, 55, .5);;
+    outline: none;
+    padding: 0 0 6px 48px;
+    color: #3a3a3a;
+    font-weight: bold;
+
+    &::placeholder {
+      color: #3a3a3a;
+    }
+    `;
+    const SearchIcon = styled.button `
+      position: absolute;
+      left: 14px;
+      top: 0;
+      background: url(${require("./search-icon.svg")});
+      background-size: 100% 100%;
+      width: 28px;
+      height: 30px;
+    `;
+  return (
+    <Form>
+        <SearchIcon type="submit" />
+        <Input type="search" />
+    </Form>
+  );
+};
