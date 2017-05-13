@@ -19,30 +19,3 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-ul, li {
-  list-style: none;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  background: transparent;
-  outline: none;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-section {
-  -ms-flex: 2;
-  -webkit-box-flex: 2;
-  flex: 2;
-}

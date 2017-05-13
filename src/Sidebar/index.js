@@ -4,16 +4,16 @@ import Search from './Search';
 import ProductList from '../ProductList';
 import styled from 'styled-components';
 
-export default () => {
-  const Sidebar = styled.aside`
+const Sidebar = styled.aside`
   background: #0e0e0e;
   width: 414px;
   padding: 31px 22px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  box-sizing: border-box;
   align-items: center;
   text-align: center;
-  `;
+`;
+
+export default () => {
   return (
     <Sidebar>
       <Logo />

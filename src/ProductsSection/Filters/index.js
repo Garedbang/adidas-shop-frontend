@@ -1,32 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default () => {
-  const Header = styled.header`
+const Header = styled.header`
   padding: 11px 23px;
   border-bottom: 3px solid rgba(231, 231, 231, .5);
-  `;
-  const Button = styled.button`
+`;
+const Button = styled.button`
   font-size: 24px;
   font-family: avenir-next-bold, sans-serif;
   font-weight: bold;
-  color: ${props => props.active ? '#4d42f8' : '#dedede'};
-  padding-left: ${props => props.firstChildPadding ? '10px' : '6px'};
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  color: ${props => (props.active ? '#4d42f8' : '#dedede')};
+  padding-left: ${props => (props.firstChildPadding ? '10px' : '6px')};
 
-  &:hover {
-    color: #4d42f8;
-  }
-  `;
-  const FilterToggle = styled.button`
+&:hover {
+  color: #4d42f8;
+}
+`;
+const FilterToggle = styled.button`
   background-color: #ebebeb;
   padding: 11px 8px;
-  `;
-  const FilterToggleIcon = styled.div`
-  background: url(${require("./filter-icon.png")});
+  border: none;
+  cursor: pointer;
+  outline: none;
+`;
+const FilterToggleIcon = styled.div`
+  background: url(${require('./filter-icon.png')});
   width: 40px;
   height: 33px;
-  `;
-  const Span = styled.span`
+`;
+const Span = styled.span`
   vertical-align: super;
   padding: 0 62px 0 19px;
   color: #4d42f8;
@@ -34,7 +40,9 @@ export default () => {
   font-family: avenir-next-bold, sans-serif;
   font-weight: bold;
   color: #4d42f8;
-  `;
+`;
+
+export default () => {
   return (
     <Header>
       <form action="get">
@@ -45,7 +53,8 @@ export default () => {
           <Button active type="button">MAN</Button>
           <Button type="button">WOMAN</Button>
         </Span>
-        <Span>SIZE
+        <Span>
+          SIZE
           <Button firstChildPadding type="button">36</Button>
           <Button type="button">37</Button>
           <Button type="button">38</Button>

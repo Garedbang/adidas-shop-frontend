@@ -22,6 +22,9 @@
   width: 18px;
   border-radius: 50%;
   margin-right: 13px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .product-price {
@@ -64,6 +67,8 @@
 .product-images-list button {
   width: 16%;
   border: solid 5px transparent;
+  cursor: pointer;
+  outline: none;
 }
 
 .product-images-list button img {
@@ -92,6 +97,9 @@
   font-size: 14px;
   color: #c0c0c0;
   font-family: avenir-next-reg;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .grey-lines {
@@ -128,7 +136,10 @@
   font-size: 32px;
   color: #ffffff;
   font-family: avenir-next-bold;
-  font-weight: bold
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .buy-now-product:hover {
