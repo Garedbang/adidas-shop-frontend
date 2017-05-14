@@ -1,10 +1,10 @@
-$ npm start
+$ npm start - 
     Starts the development server.
 
-$ npm run build
+$ npm run build - 
     Bundles the app into static files for production.
 
-$ npm test
+$ npm test - 
     Starts the test runner.
 
 
