@@ -32,6 +32,7 @@ const FilterToggleIcon = styled.div`
   width: 40px;
   height: 33px;
 `;
+
 const Span = styled.span`
   vertical-align: super;
   padding: 0 62px 0 19px;
@@ -42,28 +43,26 @@ const Span = styled.span`
   color: #4d42f8;
 `;
 
-export default () => {
-  return (
-    <Header>
-      <form action="get">
-        <FilterToggle type="button">
-          <FilterToggleIcon />
-        </FilterToggle>
-        <Span>
-          <Button active type="button">MAN</Button>
-          <Button type="button">WOMAN</Button>
-        </Span>
-        <Span>
-          SIZE
-          <Button firstChildPadding type="button">36</Button>
-          <Button type="button">37</Button>
-          <Button type="button">38</Button>
-          <Button type="button">39</Button>
-          <Button type="button">40</Button>
-          <Button active type="button">41</Button>
-          <Button type="button">42</Button>
-        </Span>
-      </form>
-    </Header>
-  );
-};
+export default () => (
+  <Header>
+    <form action="get">
+      <FilterToggle type="button">
+        <FilterToggleIcon />
+      </FilterToggle>
+      <Span>
+        <Button active type="button">MAN</Button>
+        <Button type="button">WOMAN</Button>
+      </Span>
+      <Span>
+        SIZE
+        <Button firstChildPadding type="button">36</Button>
+        <Button type="button">37</Button>
+        <Button type="button">38</Button>
+        <Button type="button">39</Button>
+        <Button type="button">40</Button>
+        <Button active type="button">41</Button>
+        <Button type="button">42</Button>
+      </Span>
+    </form>
+  </Header>
+);

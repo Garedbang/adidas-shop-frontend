@@ -28,6 +28,7 @@ const Link = styled.a`
   padding-bottom: 0;
 }
 `;
+
 const SubLink = styled.a`
   font-size: 24px;
   padding-bottom: 21px;
@@ -46,17 +47,15 @@ const SubLink = styled.a`
 }
 `;
 
-export default () => {
-  return (
+export default () => (
+  <nav>
+    <Link active href="#">SPORTS</Link>
     <nav>
-      <Link active href="#">SPORTS</Link>
-      <nav>
-        <SubLink active href="#">SHOES</SubLink>
-        <SubLink href="#">CLOTHING</SubLink>
-        <SubLink href="#">ACCESORIES</SubLink>
-      </nav>
-      <Link href="#">MICOACH</Link>
-      <Link href="#">BRANDS</Link>
+      <SubLink active href="#">SHOES</SubLink>
+      <SubLink href="#">CLOTHING</SubLink>
+      <SubLink href="#">ACCESORIES</SubLink>
     </nav>
-  );
-};
+    <Link href="#">MICOACH</Link>
+    <Link href="#">BRANDS</Link>
+  </nav>
+);

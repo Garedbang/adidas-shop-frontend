@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Sale from '../ProductSale';
 import styled from 'styled-components';
+import Sale from '../ProductSale';
 
 const Section = styled.section`
   flex: 2;
@@ -129,71 +128,66 @@ outline: none;
 }
 `;
 
-export default () => {
-  return (
-    <Section>
-      <Wrapper>
-        <div className="row between-xs">
-          <Name>
-            ULTRA
-            <br />
-            BOOST
-          </Name>
-          <div className="end-xs">
-            <Colors>
-              <Button type="button" />
-              <Button type="button" />
-              <Button type="button" />
-              <Button type="button" />
-            </Colors>
-            <Sale />
-            <Price>
-              $170
-            </Price>
-          </div>
+export default () => (
+  <Section>
+    <Wrapper>
+      <div className="row between-xs">
+        <Name>
+          ULTRA
+          <br />
+          BOOST
+        </Name>
+        <div className="end-xs">
+          <Colors>
+            <Button type="button" />
+            <Button type="button" />
+            <Button type="button" />
+            <Button type="button" />
+          </Colors>
+          <Sale />
+          <Price>
+            $170
+          </Price>
         </div>
-        <Save type="button">SAVE</Save>
-        <ProductImages>
-          <AcitveImage
-            className="center-xs"
-            src={require(`./product_ultra-boost.jpg`)}
-          />
-          <div className="row middle-xs">
-            <ButtonImg active type="button">
-              <Img src={require(`./product_ultra-boost_2.jpg`)} />
-            </ButtonImg>
-            <ButtonImg type="button">
-              <Img src={require(`./product_ultra-boost_3.jpg`)} />
-            </ButtonImg>
-            <ButtonImg type="button">
-              <Img src={require(`./product_ultra-boost_4.jpg`)} />
-            </ButtonImg>
-            <ButtonImg type="button">
-              <Img src={require(`./product_ultra-boost.jpg`)} />
-            </ButtonImg>
-            <WrapperGreyLines>
-              <GreyLines />
-              <GreyLines />
-              <GreyLines />
-            </WrapperGreyLines>
-            <ShowMore type="button">
-              see
-              <br />
-              more
-              <br />
-              photos
-            </ShowMore>
-          </div>
-        </ProductImages>
-        <Description>
-          <span>Adidas </span>
-          is a German multinational corporation, headquartered in Herzogenaurach,
-          Germany, that designs and manufactures shoes, clothing and accessories.
-        </Description>
-      </Wrapper>
-      <BuyNow>
-        BUY NOW
-      </BuyNow>
-    </Section>
-  );
-};
+      </div>
+      <Save type="button">SAVE</Save>
+      <ProductImages>
+        <AcitveImage className="center-xs" src={require('./product_ultra-boost.jpg')} />
+        <div className="row middle-xs">
+          <ButtonImg active type="button">
+            <Img src={require('./product_ultra-boost_2.jpg')} />
+          </ButtonImg>
+          <ButtonImg type="button">
+            <Img src={require('./product_ultra-boost_3.jpg')} />
+          </ButtonImg>
+          <ButtonImg type="button">
+            <Img src={require('./product_ultra-boost_4.jpg')} />
+          </ButtonImg>
+          <ButtonImg type="button">
+            <Img src={require('./product_ultra-boost.jpg')} />
+          </ButtonImg>
+          <WrapperGreyLines>
+            <GreyLines />
+            <GreyLines />
+            <GreyLines />
+          </WrapperGreyLines>
+          <ShowMore type="button">
+            see
+            <br />
+            more
+            <br />
+            photos
+          </ShowMore>
+        </div>
+      </ProductImages>
+      <Description>
+        <span>Adidas </span>
+        is a German multinational corporation, headquartered in Herzogenaurach,
+        Germany, that designs and manufactures shoes, clothing and accessories.
+      </Description>
+    </Wrapper>
+    <BuyNow>
+      BUY NOW
+    </BuyNow>
+  </Section>
+);

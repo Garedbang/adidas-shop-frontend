@@ -33,11 +33,9 @@ const SearchIcon = styled.button`
   outline: none;
 `;
 
-export default () => {
-  return (
-    <Form>
-      <SearchIcon type="submit" />
-      <Input type="search" />
-    </Form>
-  );
-};
+export default () => (
+  <Form>
+    <SearchIcon type="submit" />
+    <Input type="search" />
+  </Form>
+);

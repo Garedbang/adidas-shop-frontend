@@ -1,7 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Sale from '../../ProductSale';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import Sale from '../../ProductSale';
 
 const Div = styled.div`
   background-color: #f4f4f4;
@@ -33,12 +33,10 @@ const ProductLink = styled(Link)`
 }
 `;
 
-export default () => {
-  return (
-    <Div>
-      <Sale />
-      <Image src={require(`./content-img-1.jpg`)} alt="" />
-      <ProductLink active to="/product">$1024</ProductLink>
-    </Div>
-  );
-};
+export default () => (
+  <Div>
+    <Sale />
+    <Image src={require('./content-img-1.jpg')} alt="" />
+    <ProductLink active to="/product">$1024</ProductLink>
+  </Div>
+);

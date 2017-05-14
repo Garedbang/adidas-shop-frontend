@@ -1,8 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 import Logo from './Logo';
 import Search from './Search';
 import ProductsList from '../ProductsList';
-import styled from 'styled-components';
 
 const Sidebar = styled.aside`
   background: #0e0e0e;
@@ -13,12 +13,10 @@ const Sidebar = styled.aside`
   text-align: center;
 `;
 
-export default () => {
-  return (
-    <Sidebar>
-      <Logo />
-      <Search />
-      <ProductsList />
-    </Sidebar>
-  );
-};
+export default () => (
+  <Sidebar>
+    <Logo />
+    <Search />
+    <ProductsList />
+  </Sidebar>
+);

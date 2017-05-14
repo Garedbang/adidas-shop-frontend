@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const LinkToHome = styled(Link)`
@@ -9,10 +9,8 @@ const LinkToHome = styled(Link)`
   cursor: pointer;
 `;
 
-export default () => {
-  return (
-    <LinkToHome to="/">
-      <img src={require(`./logo.png`)} alt="logo" />
-    </LinkToHome>
-  );
-};
+export default () => (
+  <LinkToHome to="/">
+    <img src={require('./logo.png')} alt="logo" />
+  </LinkToHome>
+);

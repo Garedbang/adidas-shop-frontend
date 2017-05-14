@@ -11,6 +11,4 @@ const Sale = styled.span`
   position: absolute;
 `;
 
-export default () => {
-  return <Sale>SALE</Sale>;
-};
+export default () => <Sale>SALE</Sale>;
