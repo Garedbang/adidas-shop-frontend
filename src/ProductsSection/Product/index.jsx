@@ -109,19 +109,19 @@ const Description = styled.p`
   font-weight: lighter;
 `;
 const BuyNow = styled.button`
-background-image: linear-gradient(to right, #4949aa, #27275d);
-position: fixed;
-bottom: 0;
-width: calc(100% - 414px);
-padding: 35px 0;
-z-index: 2;
-font-size: 32px;
-color: #ffffff;
-font-family: avenir-next-bold, sans-serif;
-font-weight: bold;
-border: none;
-cursor: pointer;
-outline: none;
+  background-image: linear-gradient(to right, #4949aa, #27275d);
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 414px);
+  padding: 35px 0;
+  z-index: 2;
+  font-size: 32px;
+  color: #ffffff;
+  font-family: avenir-next-bold, sans-serif;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
 
 &:hover {
   background-image: linear-gradient(to right, #27275d, #4949aa);

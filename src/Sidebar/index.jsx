@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
 import Search from './Search';
-import ProductsList from '../ProductsList';
+import Menu from '../Menu';
 
 const Sidebar = styled.aside`
   background: #0e0e0e;
@@ -17,6 +17,6 @@ export default () => (
   <Sidebar>
     <Logo />
     <Search />
-    <ProductsList />
+    <Menu />
   </Sidebar>
 );

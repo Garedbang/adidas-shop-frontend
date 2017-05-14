@@ -16,9 +16,9 @@ const Button = styled.button`
   color: ${props => (props.active ? '#4d42f8' : '#dedede')};
   padding-left: ${props => (props.firstChildPadding ? '10px' : '6px')};
 
-&:hover {
-  color: #4d42f8;
-}
+  &:hover {
+    color: #4d42f8;
+  }
 `;
 const FilterToggle = styled.button`
   background-color: #ebebeb;

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import 'normalize.css';
 
 import App from './App';
-import './Fonts.css';
+import './fonts.css';
 import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
