@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-const LinkToHome = styled(Link)`
+const Link = styled(NavLink)`
   height: 52px;
   margin-bottom: 41px;
   display: block;
@@ -10,7 +10,7 @@ const LinkToHome = styled(Link)`
 `;
 
 export default () => (
-  <LinkToHome to="/">
+  <Link to="/">
     <img src={require('./logo.png')} alt="logo" />
-  </LinkToHome>
+  </Link>
 );

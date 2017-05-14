@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Logo from './Logo';
 import Search from './Search';
-import Menu from '../Menu';
+import Menu from './Menu';
 
 const Sidebar = styled.aside`
   background: #0e0e0e;

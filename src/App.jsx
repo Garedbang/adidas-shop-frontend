@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import styled from 'styled-components';
+
 import 'normalize.css';
 import Sidebar from './Sidebar';
-import ProductsList from './ProductsSection/List';
-import Product from './ProductsSection/Product';
+import ProductList from './ProductList';
+import ProductShow from './ProductShow';
+
 import './fonts.css';
 import './App.css';
 
@@ -20,12 +22,11 @@ function App() {
     <Router>
       <Wrapper>
         <Sidebar />
-        <Route exact path="/" component={ProductsList} />
-        <Route path="/product" component={Product} />
+        <Route exact path="/" component={ProductList} />
+        <Route path="/product" component={ProductShow} />
       </Wrapper>
     </Router>
   );
 }
 
 export default App;
-// Comment for push
