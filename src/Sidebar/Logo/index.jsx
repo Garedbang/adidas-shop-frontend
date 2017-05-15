@@ -11,6 +11,6 @@ const LinkToHome = styled(Link)`
 
 export default () => (
   <LinkToHome to="/">
-    <img src={require('./logo.png')} alt="logo" />
+    <img src={require('./logo.svg')} alt="logo" />
   </LinkToHome>
 );
