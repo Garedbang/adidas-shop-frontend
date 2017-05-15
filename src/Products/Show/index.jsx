@@ -67,10 +67,12 @@ const AcitveImage = styled.img`
 `;
 const ButtonImg = styled.button`
   background-color: transparent;
-  width: 16%;
   cursor: pointer;
   outline: none;
   margin-right: 15px;
+  padding: 0;
+  height: 118px;
+  width: 145px;
   border: ${props => (props.active ? 'solid 5px #e8e8ea' : 'solid 5px transparent')};
 
   &:hover {
@@ -78,7 +80,6 @@ const ButtonImg = styled.button`
   }
 `;
 const Img = styled.img`
-  height: 140px;
   cursor: pointer;
   width: 100%;
 `;
@@ -146,10 +147,10 @@ export default () => (
         </Name>
         <div>
           <Colors>
-            <Button />
-            <Button />
-            <Button />
-            <Button />
+            <Button style={{ background: '#c5c5c5' }} />
+            <Button style={{ background: '#4d87ca' }} />
+            <Button style={{ background: '#4a4a4a' }} />
+            <Button style={{ background: '#e0e0e0' }} />
           </Colors>
           <Sale>SALE</Sale>
           <Price>
@@ -161,7 +162,7 @@ export default () => (
       <Images>
         <AcitveImage src={require('./product_ultra-boost.jpg')} />
         <Row middle="xs">
-          <ButtonImg active>
+          <ButtonImg>
             <Img src={require('./product_ultra-boost_2.jpg')} />
           </ButtonImg>
           <ButtonImg>
@@ -170,7 +171,7 @@ export default () => (
           <ButtonImg>
             <Img src={require('./product_ultra-boost_4.jpg')} />
           </ButtonImg>
-          <ButtonImg>
+          <ButtonImg active>
             <Img src={require('./product_ultra-boost.jpg')} />
           </ButtonImg>
           <WrapperGreyLines>
