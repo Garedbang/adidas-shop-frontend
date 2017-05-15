@@ -50,22 +50,22 @@ const Span = styled.span`
 export default () => (
   <Header>
     <form action="get">
-      <FilterToggle type="button">
+      <FilterToggle>
         <FilterToggleIcon />
       </FilterToggle>
       <Span>
-        <Button active type="button">MAN</Button>
-        <Button type="button">WOMAN</Button>
+        <Button active>MAN</Button>
+        <Button>WOMAN</Button>
       </Span>
       <Span>
         SIZE
-        <Button firstChildPadding type="button">36</Button>
-        <Button type="button">37</Button>
-        <Button type="button">38</Button>
-        <Button type="button">39</Button>
-        <Button type="button">40</Button>
-        <Button active type="button">41</Button>
-        <Button type="button">42</Button>
+        <Button firstChildPadding>36</Button>
+        <Button>37</Button>
+        <Button>38</Button>
+        <Button>39</Button>
+        <Button>40</Button>
+        <Button active>41</Button>
+        <Button>42</Button>
       </Span>
     </form>
   </Header>

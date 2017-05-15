@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Row } from 'react-flexbox-grid';
 
 import { Label } from '../../Components/Label';
 
@@ -18,6 +19,7 @@ const Name = styled.h1`
 `;
 const Colors = styled.span`
   z-index: 1;
+  padding-right: 15px;
 `;
 const Button = styled.button`
   background-color: #c5c5c5;
@@ -100,14 +102,14 @@ const ShowMore = styled.button`
   outline: none;
 `;
 const Description = styled.p`
-  > span {
-    color: #6e6e6e;
-  }
   font-size: 33px;
   line-height: 1.52;
   color: #d8d8d8;
   font-family: avenir-next-reg, sans-serif;
   font-weight: lighter;
+`;
+const GreyText = styled.span`
+  color: #6e6e6e;
 `;
 const BuyNow = styled.button`
   background-image: linear-gradient(to right, #4949aa, #27275d);
@@ -132,39 +134,39 @@ const BuyNow = styled.button`
 export default () => (
   <Section>
     <Wrapper>
-      <div className="row between-xs">
+      <Row between="xs">
         <Name>
           ULTRA
           <br />
           BOOST
         </Name>
-        <div className="end-xs">
+        <div>
           <Colors>
-            <Button type="button" />
-            <Button type="button" />
-            <Button type="button" />
-            <Button type="button" />
+            <Button />
+            <Button />
+            <Button />
+            <Button />
           </Colors>
           <Label>SALE</Label>
           <Price>
             $170
           </Price>
         </div>
-      </div>
-      <Save type="button">SAVE</Save>
+      </Row>
+      <Save>SAVE</Save>
       <ProductImages>
         <AcitveImage className="center-xs" src={require('./product_ultra-boost.jpg')} />
         <div className="row middle-xs">
-          <ButtonImg active type="button">
+          <ButtonImg active>
             <Img src={require('./product_ultra-boost_2.jpg')} />
           </ButtonImg>
-          <ButtonImg type="button">
+          <ButtonImg>
             <Img src={require('./product_ultra-boost_3.jpg')} />
           </ButtonImg>
-          <ButtonImg type="button">
+          <ButtonImg>
             <Img src={require('./product_ultra-boost_4.jpg')} />
           </ButtonImg>
-          <ButtonImg type="button">
+          <ButtonImg>
             <Img src={require('./product_ultra-boost.jpg')} />
           </ButtonImg>
           <WrapperGreyLines>
@@ -172,7 +174,7 @@ export default () => (
             <GreyLines />
             <GreyLines />
           </WrapperGreyLines>
-          <ShowMore type="button">
+          <ShowMore>
             see
             <br />
             more
@@ -182,7 +184,7 @@ export default () => (
         </div>
       </ProductImages>
       <Description>
-        <span>Adidas </span>
+        <GreyText>Adidas </GreyText>
         is a German multinational corporation, headquartered in Herzogenaurach,
         Germany, that designs and manufactures shoes, clothing and accessories.
       </Description>
