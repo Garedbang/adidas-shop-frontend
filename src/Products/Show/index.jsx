@@ -18,8 +18,10 @@ const Name = styled.h1`
   z-index: 1;
 `;
 const Colors = styled.span`
-  z-index: 1;
   padding-right: 15px;
+`;
+const Sale = styled(Label)`
+  position: relative;
 `;
 const Button = styled.button`
   background-color: #c5c5c5;
@@ -54,12 +56,14 @@ const Save = styled.button`
   outline: none;
   z-index: 1;
 `;
-const ProductImages = styled.div`
+const Images = styled.div`
   margin-top: -200px;
   z-index: 0;
 `;
 const AcitveImage = styled.img`
   height: 525px;
+  display: block;
+  margin: 0 auto;
 `;
 const ButtonImg = styled.button`
   background-color: transparent;
@@ -147,16 +151,16 @@ export default () => (
             <Button />
             <Button />
           </Colors>
-          <Label>SALE</Label>
+          <Sale>SALE</Sale>
           <Price>
             $170
           </Price>
         </div>
       </Row>
       <Save>SAVE</Save>
-      <ProductImages>
-        <AcitveImage className="center-xs" src={require('./product_ultra-boost.jpg')} />
-        <div className="row middle-xs">
+      <Images>
+        <AcitveImage src={require('./product_ultra-boost.jpg')} />
+        <Row middle="xs">
           <ButtonImg active>
             <Img src={require('./product_ultra-boost_2.jpg')} />
           </ButtonImg>
@@ -181,8 +185,8 @@ export default () => (
             <br />
             photos
           </ShowMore>
-        </div>
-      </ProductImages>
+        </Row>
+      </Images>
       <Description>
         <GreyText>Adidas </GreyText>
         is a German multinational corporation, headquartered in Herzogenaurach,

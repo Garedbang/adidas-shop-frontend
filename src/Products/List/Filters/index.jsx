@@ -23,14 +23,14 @@ const Button = styled.button`
     padding-left: 10px;
   }
 `;
-const FilterToggle = styled.button`
+const Toggle = styled.button`
   background-color: #ebebeb;
   padding: 11px 8px;
   border: none;
   cursor: pointer;
   outline: none;
 `;
-const FilterToggleIcon = styled.span`
+const Icon = styled.div`
   display: inline-block;
   background: url(${require('./filter-icon.png')});
   width: 40px;
@@ -50,16 +50,16 @@ const Span = styled.span`
 export default () => (
   <Header>
     <form action="get">
-      <FilterToggle>
-        <FilterToggleIcon />
-      </FilterToggle>
+      <Toggle>
+        <Icon />
+      </Toggle>
       <Span>
         <Button active>MAN</Button>
         <Button>WOMAN</Button>
       </Span>
       <Span>
         SIZE
-        <Button firstChildPadding>36</Button>
+        <Button>36</Button>
         <Button>37</Button>
         <Button>38</Button>
         <Button>39</Button>

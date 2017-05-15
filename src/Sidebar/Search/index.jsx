@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Form = styled.form`
+const Search = styled.form`
   position: relative;
   padding-bottom: 130px;
 `;
@@ -20,7 +20,7 @@ const Input = styled.input`
     color: #3a3a3a;
   }
 `;
-const SearchIcon = styled.button`
+const Icon = styled.button`
   position: absolute;
   left: 14px;
   top: 0;
@@ -34,8 +34,8 @@ const SearchIcon = styled.button`
 `;
 
 export default () => (
-  <Form>
-    <SearchIcon type="submit" />
+  <Search>
+    <Icon type="submit" />
     <Input type="search" />
-  </Form>
+  </Search>
 );
