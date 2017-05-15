@@ -6,7 +6,7 @@ import { Label } from '../../../Components/Label';
 
 const Div = styled.div`
   background-color: #f4f4f4;
-  margin: 6px 0;
+  margin: 11px 0;
   padding-bottom: 9px;
   position: relative;
 `;
