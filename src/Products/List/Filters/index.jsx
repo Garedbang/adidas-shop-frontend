@@ -13,11 +13,14 @@ const Button = styled.button`
   cursor: pointer;
   outline: none;
   background-color: transparent;
+  padding-left: 6px;
   color: ${props => (props.active ? '#4d42f8' : '#dedede')};
-  padding-left: ${props => (props.firstChildPadding ? '10px' : '6px')};
 
   &:hover {
     color: #4d42f8;
+  }
+  &:first-child {
+    padding-left: 10px;
   }
 `;
 const FilterToggle = styled.button`
@@ -27,7 +30,8 @@ const FilterToggle = styled.button`
   cursor: pointer;
   outline: none;
 `;
-const FilterToggleIcon = styled.div`
+const FilterToggleIcon = styled.span`
+  display: inline-block;
   background: url(${require('./filter-icon.png')});
   width: 40px;
   height: 33px;

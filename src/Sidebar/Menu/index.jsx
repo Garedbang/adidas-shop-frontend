@@ -12,21 +12,21 @@ const Link = styled.a`
   position: ${props => (props.active ? 'inherit' : 'relative')};
   color: ${props => (props.active ? '#ffffff' : '#3c3c3c')};
 
-&:hover {
-  color: #ffffff;
-}
-&:after {
-  content: "";
-  background: url(${require('./dropdown-icon.svg')});
-  background-size: 100% 100%;
-  width: 14px;
-  height: 9px;
-  position: ${props => (props.active ? 'absolute' : 'inherit')};
-  margin: ${props => (props.active ? '8px 0 0 20px' : '0')};
-}
-&:last-child {
-  padding-bottom: 0;
-}
+  &:hover {
+    color: #ffffff;
+  }
+  &:after {
+    content: "";
+    background: url(${require('./dropdown-icon.svg')});
+    background-size: 100% 100%;
+    width: 14px;
+    height: 9px;
+    position: ${props => (props.active ? 'absolute' : 'inherit')};
+    margin: ${props => (props.active ? '8px 0 0 20px' : '0')};
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
 `;
 
 const SubLink = styled.a`
@@ -39,12 +39,12 @@ const SubLink = styled.a`
   cursor: pointer;
   color: ${props => (props.active ? '#ffffff' : '#3c3c3c')};
 
-&:hover {
-  color: #ffffff;
-}
-&:last-child {
-  padding-bottom: 50px;
-}
+  &:hover {
+    color: #ffffff;
+  }
+  &:last-child {
+    padding-bottom: 50px;
+  }
 `;
 
 export default () => (

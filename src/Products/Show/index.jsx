@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Sale from '../ProductSale';
+
+import { Label } from '../../Components/Label';
 
 const Section = styled.section`
   flex: 2;
@@ -123,9 +124,9 @@ const BuyNow = styled.button`
   cursor: pointer;
   outline: none;
 
-&:hover {
-  background-image: linear-gradient(to right, #27275d, #4949aa);
-}
+  &:hover {
+    background-image: linear-gradient(to right, #27275d, #4949aa);
+  }
 `;
 
 export default () => (
@@ -144,7 +145,7 @@ export default () => (
             <Button type="button" />
             <Button type="button" />
           </Colors>
-          <Sale />
+          <Label>SALE</Label>
           <Price>
             $170
           </Price>
