@@ -5,7 +5,7 @@ export const Label = styled.span`
   background-color: #ff5c5c;
   font-size: 14px;
   color: #ffffff;
-  padding: 6px 20px;
+  padding: 8px 20px;
 `;
 
 export default () => <Label>SALE</Label>;

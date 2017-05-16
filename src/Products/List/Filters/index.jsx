@@ -16,15 +16,18 @@ const Button = styled.button`
   cursor: pointer;
   outline: none;
   background-color: transparent;
-  padding-left: 6px;
+  padding-left: 2px;
   color: ${props => (props.active ? '#4d42f8' : '#dedede')};
 
   &:hover {
     color: #4d42f8;
   }
   &:first-child {
-    padding-left: 10px;
+    padding-left: 19px;
   }
+`;
+const GenderButton = styled(Button)`
+  padding-right: 15px;
 `;
 const Toggle = styled.button`
   background-color: #ebebeb;
@@ -42,7 +45,7 @@ const Icon = styled.div`
 
 const Span = styled.span`
   vertical-align: super;
-  padding: 0 62px 0 19px;
+  padding: 0 25px 0 19px;
   color: #4d42f8;
   font-size: 24px;
   font-family: avenir-next-bold, sans-serif;
@@ -57,7 +60,7 @@ export default () => (
         <Icon />
       </Toggle>
       <Span>
-        <Button active>MAN</Button>
+        <GenderButton active>MAN</GenderButton>
         <Button>WOMAN</Button>
       </Span>
       <Span>
