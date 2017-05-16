@@ -38,7 +38,7 @@ const Price = styled.h2`
   font-size: 80px;
   color: #e2e2e2;
   margin: 0;
-  padding-top: 22px;
+  padding-top: 29px;
   position: relative;
 `;
 const Save = styled.button`
@@ -62,8 +62,6 @@ const Images = styled.div`
 `;
 const AcitveImage = styled.img`
   height: 525px;
-  display: block;
-  margin: 0 auto;
 `;
 const ButtonImg = styled.button`
   background-color: transparent;
@@ -83,18 +81,6 @@ const Img = styled.img`
   cursor: pointer;
   width: 100%;
 `;
-const WrapperGreyLines = styled.div`
-  width: 160px;
-  margin-right: 15px;
-`;
-const GreyLines = styled.span`
-  background-color: #e7e7e7;
-  width: 100%;
-  height: 3px;
-  border-radius: 2px;
-  display: block;
-  margin-bottom: 3px;
-`;
 const ShowMore = styled.button`
   flex: 0 1 55px;
   width: 64px;
@@ -112,6 +98,7 @@ const Description = styled.p`
   color: #d8d8d8;
   font-family: avenir-next-reg, sans-serif;
   font-weight: lighter;
+  padding: 25px 0;
 `;
 const GreyText = styled.span`
   color: #6e6e6e;
@@ -121,7 +108,7 @@ const BuyNow = styled.button`
   position: fixed;
   bottom: 0;
   width: calc(100% - 414px);
-  padding: 35px 0;
+  padding: 39px 0;
   z-index: 2;
   font-size: 32px;
   color: #ffffff;
@@ -174,11 +161,9 @@ export default () => (
           <ButtonImg active>
             <Img src={require('./product_ultra-boost.jpg')} />
           </ButtonImg>
-          <WrapperGreyLines>
-            <GreyLines />
-            <GreyLines />
-            <GreyLines />
-          </WrapperGreyLines>
+          <ButtonImg>
+            <Img src={require('./product_ultra-boost_3.jpg')} />
+          </ButtonImg>
           <ShowMore>
             see
             <br />

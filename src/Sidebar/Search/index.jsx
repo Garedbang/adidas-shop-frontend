@@ -12,7 +12,7 @@ const Input = styled.input`
   background: transparent;
   border-bottom: 4px solid rgba(55, 55, 55, .5);;
   outline: none;
-  padding: 0 0 6px 48px;
+  padding: 0 0 13px 48px;
   color: #3a3a3a;
   font-weight: bold;
 

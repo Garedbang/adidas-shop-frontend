@@ -12,17 +12,17 @@ const Div = styled.div`
 `;
 const Sale = styled(Label)`
   position: absolute;
-  top: 12px;
-  right: 14px;
+  top: 16px;
+  right: 17px;
 `;
 const Image = styled.img`
-  padding: 9px 9px 13px 9px;
+  padding: 9px 9px 2px 9px;
   width: 100%;
   box-sizing: border-box;
 `;
 const RRLink = styled(Link)`
   display: block;
-  padding: 24px 0;
+  padding: 28px 0;
   font-size: 30px;
   text-align: center;
   background: #ffffff;

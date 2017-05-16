@@ -8,7 +8,7 @@ const Link = styled.a`
   display: block;
   text-decoration: none;
   cursor: pointer;
-  padding-bottom: ${props => (props.active ? '6px' : '20px')};
+  padding-bottom: ${props => (props.active ? '21px' : '36px')};
   position: ${props => (props.active ? 'inherit' : 'relative')};
   color: ${props => (props.active ? '#ffffff' : '#3c3c3c')};
 
@@ -33,7 +33,7 @@ const Link = styled.a`
 
 const SubLink = styled.a`
   font-size: 24px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   font-family: andale-mono, sans-serif;
   font-weight: lighter;
   display: block;
@@ -45,7 +45,7 @@ const SubLink = styled.a`
     color: #ffffff;
   }
   &:last-child {
-    padding-bottom: 40px;
+    padding-bottom: 51px;
   }
 `;
 
