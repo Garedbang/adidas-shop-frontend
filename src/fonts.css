@@ -1,20 +1,30 @@
 @font-face {
-  font-family: avenir-next-bold;
-  src: url("/fonts/avenir-next-bold.ttf");
+  font-family: "avenir-next-bold";
+  src: local("AvenirNext"), url(./fonts/AvenirNext-Bold.eot);
+  src: local("AvenirNext"), url(./fonts/AvenirNext-Bold.eot?#iefix) format("embedded-opentype"),
+  url(./fonts/AvenirNext-Bold.woff) format("woff"),
+	url(./fonts/AvenirNext-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: avenir-next-reg;
+  font-family: "avenir-next-reg";
   src: url("/fonts/avenir-next-regular.ttf");
+  src: local("AvenirNext"), url(./fonts/AvenirNext-Regular.eot);
+  src: local("AvenirNext"), url(./fonts/AvenirNext-Regular.eot?#iefix) format("embedded-opentype"),
+  url(./fonts/AvenirNext-Regular.woff) format("woff"),
+	url(./fonts/AvenirNext-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: andale-mono;
-  src: url("/fonts/Andale-Mono.ttf");
+  font-family: "andale-mono";
+  src: local("AndaleMono"), url(./fonts/AndaleMono.eot);
+	src: local("AndaleMono"), url(./fonts/AndaleMono.eot?#iefix) format("embedded-opentype"),
+	url(./fonts/AndaleMono.woff) format("woff"),
+	url(./fonts/AndaleMono.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }

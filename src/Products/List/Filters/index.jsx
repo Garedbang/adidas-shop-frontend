@@ -5,6 +5,9 @@ const Header = styled.header`
   padding: 11px 23px;
   border-bottom: 3px solid rgba(231, 231, 231, .5);
 `;
+const Form = styled.form`
+  padding-left: 9px;
+`;
 const Button = styled.button`
   font-size: 24px;
   font-family: avenir-next-bold, sans-serif;
@@ -49,7 +52,7 @@ const Span = styled.span`
 
 export default () => (
   <Header>
-    <form action="get">
+    <Form action="get">
       <Toggle>
         <Icon />
       </Toggle>
@@ -67,6 +70,6 @@ export default () => (
         <Button active>41</Button>
         <Button>42</Button>
       </Span>
-    </form>
+    </Form>
   </Header>
 );
