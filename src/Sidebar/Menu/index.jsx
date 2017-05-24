@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../../media';
 
 const Link = styled.a`
   font-family: avenir-next-bold, sans-serif;
@@ -8,6 +9,7 @@ const Link = styled.a`
   display: block;
   text-decoration: none;
   cursor: pointer;
+  ${media.tablet`display:none`}
   padding-bottom: ${props => (props.active ? '21px' : '36px')};
   position: ${props => (props.active ? 'inherit' : 'relative')};
   color: ${props => (props.active ? '#ffffff' : '#3c3c3c')};
@@ -39,6 +41,7 @@ const SubLink = styled.a`
   display: block;
   text-decoration: none;
   cursor: pointer;
+  ${media.tablet`display:none`}
   color: ${props => (props.active ? '#ffffff' : '#3c3c3c')};
 
   &:hover {

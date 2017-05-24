@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../../media';
 
 const Search = styled.form`
   position: relative;
   padding-bottom: 130px;
+  ${media.tablet`display:none`}
 `;
 const Input = styled.input`
   width: 100%;

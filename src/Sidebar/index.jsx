@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from '../media';
+
 import Logo from './Logo';
 import Search from './Search';
 import Menu from './Menu';
@@ -11,6 +13,14 @@ const Sidebar = styled.aside`
   box-sizing: border-box;
   align-items: center;
   text-align: center;
+  z-index: 2;
+  ${media.desktop`width: 327px`}
+  ${media.tablet`
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 17px 15px;
+    `}
 `;
 
 export default () => (
