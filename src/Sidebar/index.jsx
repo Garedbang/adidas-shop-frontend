@@ -14,13 +14,13 @@ const Sidebar = styled.aside`
   align-items: center;
   text-align: center;
   z-index: 2;
-  ${media.desktop`width: 327px`}
   ${media.tablet`
-    width: 100%;
+    width: 100% !important;
     position: fixed;
     top: 0;
     padding: 17px 15px;
-    `}
+  `}
+  ${media.desktop`width: 327px`}
 `;
 
 export default () => (

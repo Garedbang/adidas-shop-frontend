@@ -5,7 +5,7 @@ import media from '../../../media';
 const Header = styled.header`
   padding: 11px 23px;
   border-bottom: 3px solid rgba(231, 231, 231, .5);
-  ${media.tablet`padding: 76px 15px 11px 15px;`}
+  ${media.tablet`padding: 76px 15px 15px 15px;`}
 
 `;
 const Form = styled.form`
@@ -66,11 +66,11 @@ const Gender = styled(Span)`
   ${media.tablet`padding-left:0`}
 `;
 const Sizes = styled(Span)`
-  @media (max-width:1136px) {
+  ${media.giant`
     display: block;
     padding: 0;
-   }
-   padding-left: 0;
+    `}
+  padding-left: 0;
 `;
 
 export default () => (
