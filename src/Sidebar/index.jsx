@@ -50,17 +50,18 @@ export default class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isOpened: false };
-    this.toggle = this.toggle.bind(this);
+    this.handleToggle = this.handleToggle.bind(this);
   }
 
-  toggle() {
+  handleToggle() {
     this.setState(prevState => ({ isOpened: !prevState.isOpened }));
   }
+
   render() {
     return (
       <Wrapper isOpened={this.state.isOpened}>
         <Logo />
-        <Toggle onClick={this.toggle} />
+        <Toggle onClick={this.handleToggle} />
         <Search />
         <Menu />
       </Wrapper>

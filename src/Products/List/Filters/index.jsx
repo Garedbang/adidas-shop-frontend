@@ -35,8 +35,9 @@ const GenderButton = styled(Button)`
   padding-right: 15px;
   ${media.tablet`
     &:first-child {
-      padding-left:0
-      }`}
+      padding-left:0;
+    }
+  `}
 `;
 const Toggle = styled.button`
   background-color: #ebebeb;
@@ -69,7 +70,7 @@ const Sizes = styled(Span)`
   ${media.giant`
     display: block;
     padding: 0;
-    `}
+  `}
   padding-left: 0;
 `;
 

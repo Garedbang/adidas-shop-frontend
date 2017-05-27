@@ -51,11 +51,11 @@ const BuyNow = styled.button`
 export default class Show extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { color: '#c5c5c5' };
-    this.changeColor = this.changeColor.bind(this);
+    this.state = { color: '' };
+    this.handleColorChange = this.handleColorChange.bind(this);
   }
 
-  changeColor(color) {
+  handleColorChange(color) {
     this.setState({ color });
   }
 
@@ -63,7 +63,7 @@ export default class Show extends React.Component {
     return (
       <Section>
         <Wrapper>
-          <Header setColor={this.changeColor} color={this.state.color} />
+          <Header setColor={this.handleColorChange} color={this.state.color} />
           <Carousel />
           <Description>
             <GreyText>Adidas </GreyText>

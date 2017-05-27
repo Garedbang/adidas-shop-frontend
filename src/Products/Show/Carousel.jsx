@@ -31,9 +31,10 @@ export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = { selectedIndex: 0 };
-    this.changeImage = this.changeImage.bind(this);
+    this.handleImageChange = this.handleImageChange.bind(this);
   }
-  changeImage(selectedIndex) {
+
+  handleImageChange(selectedIndex) {
     this.setState({ selectedIndex });
   }
 
@@ -48,7 +49,7 @@ export default class Carousel extends React.Component {
               key={img}
               index={index}
               isSelected={this.state.selectedIndex === index}
-              onClick={this.changeImage}
+              onClick={this.handleImageChange}
             />
           ))}
         </Row>
