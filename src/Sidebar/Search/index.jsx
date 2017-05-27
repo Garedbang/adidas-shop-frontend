@@ -5,7 +5,7 @@ import media from '../../media';
 const Search = styled.form`
   position: relative;
   padding-bottom: 130px;
-  ${media.tablet`display:none`}
+  ${media.tablet`padding-bottom:40px;`}
 `;
 const Input = styled.input`
   width: 100%;

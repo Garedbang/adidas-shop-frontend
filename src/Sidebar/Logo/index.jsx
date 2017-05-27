@@ -10,7 +10,7 @@ const LinkToHome = styled(Link)`
   cursor: pointer;
   ${media.tablet`
     height: 29px;
-    margin-bottom: 0;
+    margin-bottom: 30px;;
     text-align: left;
     `}
 `;
